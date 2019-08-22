@@ -1,0 +1,24 @@
+Install the minimal centos from : http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1810.iso
+After the Initial setup, 
+For CENTOS7
+Step 1: Install Gnome GUI packages using the YUM command 
+  `yum groupinstall "GNOME Desktop" "Graphical Administration Tools" "Server with GUI"
+Step 2: Enable GUI on system startup. In CentOS 7 / RHEL 7,  systemd uses “targets” instead of runlevel. The /etc/inittab file is no more used to change run levels. So, issue the following command to enable the GUI on system start.
+
+# ln -sf /lib/systemd/system/runlevel5.target /etc/systemd/system/default.target
+Step 3: Reboot the machine to start the server in the graphical mode.
+
+# reboot
+
+Step 4: Accept the license by clicking on the “LICENSE INFORMATION“.
+
+``Insert image``
+
+Step 5: Tick mark the “I accept the license agreement” and click on “Done“.
+``Insert image ``
+
+Step 6: Click on “FINISH CONFIGURATION” to complete the setup.
+
+Step 7: You may need to do some post configuration tasks, like creating first user (local account), language, etc.
+
+Then finally you will get the desktop.
