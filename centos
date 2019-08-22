@@ -22,3 +22,6 @@ Step 6: Click on “FINISH CONFIGURATION” to complete the setup.
 Step 7: You may need to do some post configuration tasks, like creating first user (local account), language, etc.
 
 Then finally you will get the desktop.
+
+
+Reference: https://www.itzgeek.com/how-tos/linux/centos-how-tos/install-gnome-gui-on-centos-7-rhel-7.html
